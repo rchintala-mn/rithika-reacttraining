@@ -7,6 +7,7 @@ import AxioSignup from "./axioSignup";
 import Search from "./Search";
 import AxioCakeList from "./axioCakeList";
 import AxiosCakedetails from "./AxiosCakedetails";
+import CheckOut from "./CheckOut";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             path="/detailCard/:cakeid"
             element={<AxiosCakedetails />}
           ></Route>
+          <Route path="/cart" element={<CheckOut />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
