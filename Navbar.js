@@ -42,6 +42,13 @@ function Navbar() {
     },
     {
       label: (
+        <Link to="/cart">
+          <Button type="primary">Cart</Button>
+        </Link>
+      ),
+    },
+    {
+      label: (
         <>
           <Input placeholder="search" onChange={handleSearch}></Input>,
           <Button onClick={Search}>Search</Button>
